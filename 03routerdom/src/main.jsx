@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Github, { Gitloader } from './components/Github.jsx'
+
 import {
   Route,
   RouterProvider,
@@ -22,6 +24,7 @@ const router = createBrowserRouter(
       <Route path="contact" element={<Contact />} />
       <Route path="user" element={<User />} />
       <Route path="user/:id" element={<User />} />
+      <Route loader={Gitloader} path="github" element={<Github/>} />
 
     </Route>
   )

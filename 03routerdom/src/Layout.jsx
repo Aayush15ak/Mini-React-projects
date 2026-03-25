@@ -8,6 +8,7 @@ export default function Layout() {
         <Link to="/about">About</Link> 
         <Link to="/contact">Contact</Link>
         <Link to="/user">User</Link>
+        <Link to="/github">Github</Link>
       </nav>
 
       <hr />
